@@ -17,7 +17,7 @@ const Hero = () => {
 
               <ContainerLayout>
                   
-                  <Box display={'flex'} alignItems={'center'} h={'100vh'} justifyContent={'center'}>
+                  <Box display={'flex'} alignItems={'center'} h={['85vh','100vh']} justifyContent={'center'}>
 
                      <Box>
                           <Text fontWeight={'900'} fontSize={['50px','80px']}
