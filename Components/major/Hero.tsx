@@ -12,7 +12,7 @@ const Hero = () => {
     const {isOpen: isModal , onOpen:onModal , onClose: closeModal } = useDisclosure();
     const {isOpen: isDrawal , onOpen:onDrawal , onClose: closeDrawal } = useDisclosure();
 
-    const dataURL = blockies.createDataURL({ seed: '0x11d1f07af5501156a3dc81ed93f9eebd81d3e47q' })
+    const dataURL = blockies.createDataURL({ seed: '0x994913CBF19B5DC2D6021CCE6a69a3D676c2c4b8' })
     console.log(dataURL)
     return (
         <>
@@ -89,6 +89,7 @@ const Hero = () => {
             </ModalLayout>
 
             <DrawerLayout  isOpen={isDrawal} onClose={closeDrawal}>
+                <Text fontWeight={'bold'} py={'3em'}> Create Account</Text>
                <CreateUser/>
             </DrawerLayout>
       
