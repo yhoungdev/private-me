@@ -6,14 +6,16 @@ import blockies from 'ethereum-blockies-png';
 import ModalLayout from "../../Layouts/ModalLayout";
 import DrawerLayout from "../../Layouts/DrawerLayout";
 import CreateUser from "../../pages/Auth/CreateUser";
+import RestoreAccount from "../../pages/Auth/Signin";
 
 const Hero = () => {
 
     const {isOpen: isModal , onOpen:onModal , onClose: closeModal } = useDisclosure();
     const {isOpen: isDrawal , onOpen:onDrawal , onClose: closeDrawal } = useDisclosure();
+    const {isOpen: isDrawalAuth , onOpen:onDrawalAuth , onClose: closeDrawalAuth } = useDisclosure();
 
     const dataURL = blockies.createDataURL({ seed: '0x994913CBF19B5DC2D6021CCE6a69a3D676c2c4b8' })
-    console.log(dataURL)
+   
     return (
         <>
             <Box position={'relative'}>
@@ -80,7 +82,7 @@ const Hero = () => {
 
                         <Box textAlign={'center'} p={['2em','1.5em']}
                          bg={'var(--bright-shade)'} borderRadius={'0.5em'}
-                         cursor={'pointer'} >
+                         cursor={'pointer'} onClick={onDrawalAuth} >
                             <Avatar src="https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://cdn.solanamonkey.business/gen2/265.png"/>
                             <Text my={'0.6em'}>Welcome Back</Text>
                         </Box>
@@ -92,6 +94,16 @@ const Hero = () => {
                 <Text fontWeight={'bold'} py={'3em'}> Create Account</Text>
                <CreateUser/>
             </DrawerLayout>
+
+            {/* Login with Mnemonic */}
+
+            <DrawerLayout  isOpen={isDrawalAuth} onClose={closeDrawalAuth}>
+                <Text fontWeight={'bold'} py={'3em'}> Restore Account</Text>
+                 <RestoreAccount/>
+            </DrawerLayout>
+
+
+
       
             </Box>
         </>

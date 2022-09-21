@@ -1,4 +1,4 @@
-import { Modal, ModalBody, ModalContent, ModalCloseButton, ModalHeader} from "@chakra-ui/react";
+import { Modal, ModalBody, ModalContent, ModalCloseButton, ModalHeader, ModalOverlay} from "@chakra-ui/react";
 
 
 const ModalLayout =({children , isOpen, title , onClose } : any ) => {
@@ -6,6 +6,7 @@ const ModalLayout =({children , isOpen, title , onClose } : any ) => {
         <>
 
             <Modal isOpen={isOpen} onClose={onClose} size={['xs','md']} >
+                <ModalOverlay/>
                 <ModalContent bg={'var(--dark-shade)'} py={'3em'} >
 
                    <ModalCloseButton/>
