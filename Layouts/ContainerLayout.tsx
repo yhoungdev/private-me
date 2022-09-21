@@ -2,14 +2,14 @@ import { Container } from "@chakra-ui/react";
 
 
 interface Props {
-    children ?: string
+    children ?: any
 }
 
 const ContainerLayout =({children}: Props) => {
     return (
         <>
 
-            <Container>
+            <Container maxW={['100%' , '80%']}>
 
                     
                     {children}
