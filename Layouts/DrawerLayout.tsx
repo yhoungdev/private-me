@@ -4,10 +4,10 @@ const DrawerLayout =({isOpen , onClose , title,  children}: any) => {
     return (
         <>
 
-          <Drawer isOpen={isOpen}  onClose={onClose}>
+          <Drawer isOpen={isOpen}  onClose={onClose} size={['full' , 'md']}>
 
             <DrawerHeader>{title}</DrawerHeader>
-            <DrawerContent>
+            <DrawerContent bg={'var(--dark-shade)'}>
 
                 <DrawerBody>
                     {children}

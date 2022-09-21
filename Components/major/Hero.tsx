@@ -4,10 +4,13 @@ import InterfaceButton from "../main/Button";
 import BigHeading from "../main/Typo/BigHeading";
 import blockies from 'ethereum-blockies-png';
 import ModalLayout from "../../Layouts/ModalLayout";
+import DrawerLayout from "../../Layouts/DrawerLayout";
+import CreateUser from "../../pages/Auth/CreateUser";
 
 const Hero = () => {
 
-    const {isOpen , onOpen , onClose } = useDisclosure();
+    const {isOpen: isModal , onOpen:onModal , onClose: closeModal } = useDisclosure();
+    const {isOpen: isDrawal , onOpen:onDrawal , onClose: closeDrawal } = useDisclosure();
 
     const dataURL = blockies.createDataURL({ seed: '0x11d1f07af5501156a3dc81ed93f9eebd81d3e47q' })
     console.log(dataURL)
@@ -37,7 +40,7 @@ const Hero = () => {
                         <Center>
                           
                             <InterfaceButton bg={'var(--primary-blue)'}
-                                onClick={onOpen}>Get Started</InterfaceButton>
+                                onClick={onModal}>Get Started</InterfaceButton>
                         </Center>
 
                           <Center>
@@ -60,26 +63,34 @@ const Hero = () => {
             </Box>
 
             {/* Import Modal */}
-            <ModalLayout isOpen={isOpen} onClose={onClose}>
+            <ModalLayout isOpen={isModal} onClose={closeModal}>
 
                     <Text ml={'2em'}  fontWeight={'bold !important'} my={'1em'}>Pick an Option</Text>
 
                     <Flex justifyContent={'space-evenly'}
                      flexDir={['column' , 'row']}
                      gap={'1em'}>
-                        <Box textAlign={'center'} p={['2em','1.5em']} bg={'var(--bright-shade)'} borderRadius={'0.5em'}>
+                        <Box textAlign={'center'} p={['2em','1.5em']}
+                         bg={'var(--bright-shade)'} borderRadius={'0.5em'}
+                         cursor={'pointer'} onClick={onDrawal}>
                             <Avatar src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAvklEQVR4AcXBsU1DQRBF0evHdw8jQjfkdMNJXAa9bDip26AQtE0gk45+sAgRvHMuj8+PF80ciy4r+I85Fl1W0AkzYSbMDk6ygm6ORZcV7Myx6LKCHWEmzITZwckciy4r+IusoJtj0WUFnTATZsLscr09XhgJM2EmzA5OsoKdr7cnO+/fd3bmWHTCTJgJs4NfzLHosu7szLHosoIdYSbMhNnlenu8MBJmwkyYHZxkBTtzLHaygp05Fp0wE2bC7AfgBSyALTe/jwAAAABJRU5ErkJggg=="/>
                             <Text  my={'0.6em'}>Join The Network</Text>
                         </Box>
 
 
-                        <Box textAlign={'center'} p={['2em','1.5em']} bg={'var(--bright-shade)'} borderRadius={'0.5em'}>
+                        <Box textAlign={'center'} p={['2em','1.5em']}
+                         bg={'var(--bright-shade)'} borderRadius={'0.5em'}
+                         cursor={'pointer'} >
                             <Avatar src="https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://cdn.solanamonkey.business/gen2/265.png"/>
                             <Text my={'0.6em'}>Welcome Back</Text>
                         </Box>
                     </Flex>
 
             </ModalLayout>
+
+            <DrawerLayout  isOpen={isDrawal} onClose={closeDrawal}>
+               <CreateUser/>
+            </DrawerLayout>
       
             </Box>
         </>
