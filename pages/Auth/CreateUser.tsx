@@ -3,6 +3,8 @@ import InterfaceButton from "../../Components/main/Button";
 import { FiCopy } from 'react-icons/fi'
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
+import copy from 'copy-to-clipboard';
+import { ToastContainer, toast } from 'react-toastify';
 
 const CreateUser =() => {
 
@@ -35,12 +37,20 @@ const CreateUser =() => {
     }, [])
 
 
-    
+    const copyToClipBoard =() => {
+        //copy mnemonic phrase 
+        copy(phrase);
+        toast.success(' Copied to clipboard successfully ', {
+            theme:'colored'
+        })
+
+    }
         
+
 
     return (
         <>
-        
+            <ToastContainer/>
             <Flex justifyContent={'center'} 
             alignItems={'center'} h={'80vh'}>
              <Box>
@@ -65,11 +75,11 @@ const CreateUser =() => {
                     {/* display mnemonic phrase */}
                     <Text fontWeight={'bold'}>{phrase}</Text>
                
-                    <Box my={'2em'}  w={'fit-content'}>
-                       {/* <Text p={'0.5em'} borderRadius={'0.5em'} 
+                    <Box my={'2em'}  w={'fit-content'} onClick={copyToClipBoard}>
+                       <Text p={'0.5em'} borderRadius={'0.5em'} 
                        bg={'var(--dark-shade)'} cursor={'pointer'}>
                             <FiCopy size={'1.5em'}/>
-                        </Text> */}
+                        </Text>
                     </Box>
                </Box>
 

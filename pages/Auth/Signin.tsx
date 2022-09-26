@@ -3,6 +3,7 @@ import InterfaceButton from "../../Components/main/Button";
 import { FiCopy } from 'react-icons/fi'
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 const RestoreAccount =() => {
 
@@ -17,11 +18,27 @@ const RestoreAccount =() => {
 
         //get wallet from Mnemonic
 
-        const wallet = ethers.Wallet.fromMnemonic(phrase);
-        
-        
+        try {
 
-        console.log(wallet.address)
+            const wallet = ethers.Wallet.fromMnemonic(phrase);
+            toast.success('Account Restored Successfully' , {
+                theme: 'colored'
+            })
+
+            
+        } catch ( error  ) {
+          
+            toast.error('Invalid Mnemonic' , {
+                theme: 'colored'
+            })
+
+
+            
+        }
+
+        setTimeout(() => {
+            setLoader(false);
+        }, 1500)
 
 
 
@@ -36,7 +53,8 @@ const RestoreAccount =() => {
 
     return (
         <>
-        
+              <ToastContainer/>
+
             <Flex justifyContent={'center'} 
             alignItems={'center'} h={'80vh'}>
              <Box>
