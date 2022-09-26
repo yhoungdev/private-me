@@ -4,9 +4,11 @@ import { FiCopy } from 'react-icons/fi'
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const RestoreAccount =() => {
 
+  
     const [ loader , setLoader ] = useState(false);
     const [ phrase , setPhrase ] = useState<string>('');
 
@@ -24,6 +26,15 @@ const RestoreAccount =() => {
             toast.success('Account Restored Successfully' , {
                 theme: 'colored'
             })
+
+          
+            if (typeof window !== "undefined") {
+
+                localStorage.setItem('address', wallet.address)
+            
+                }
+            //navigate('/Auth/welcome')
+            window.location.href='/Auth/welcome'
 
             
         } catch ( error  ) {
@@ -63,7 +74,8 @@ const RestoreAccount =() => {
                 <Center>
                    <Avatar display={'none'} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAqklEQVR4AcXBMa3DMABF0Zun8EikwvDWySw8FEcmE/lmEQLhYatA0tVdXEXt1ztnej5uJwNL2fhGS5kRYSbMhNlcY6C37gf/qcZAT5gJM2E2af476bSUGVnKxkhLmZGlbPSEmTATZjMXtZT5JWEmzISZMBNmwkyYTc/H7eSCGgMj635whTATZsJMmAkzYSbM5hoDvXU/6C1l403hgzu9ljK9GgM9YSbMhNkL4UAhJXxPkZcAAAAASUVORK5CYII="/>
                 </Center>
-
+                
+                
             
                 <Text textAlign={'center'} p={'1em'} bg={'var(--dark-shade)'} 
                    w={'fit-content'} mx={'auto'} >💡</Text>

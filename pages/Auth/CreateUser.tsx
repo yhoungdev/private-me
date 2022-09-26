@@ -60,7 +60,7 @@ const CreateUser =() => {
                    <Avatar src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAqklEQVR4AcXBMa3DMABF0Zun8EikwvDWySw8FEcmE/lmEQLhYatA0tVdXEXt1ztnej5uJwNL2fhGS5kRYSbMhNlcY6C37gf/qcZAT5gJM2E2af476bSUGVnKxkhLmZGlbPSEmTATZjMXtZT5JWEmzISZMBNmwkyYTc/H7eSCGgMj635whTATZsJMmAkzYSbM5hoDvXU/6C1l403hgzu9ljK9GgM9YSbMhNkL4UAhJXxPkZcAAAAASUVORK5CYII="/>
                 </Center>
 
-                <Text textAlign={'center'} my={'1em'}>{address}</Text>
+                <Text textAlign={'center'} my={'1em'} w={'70%'} mx={'auto'}>{address}</Text>
 
 
                 <Text textAlign={'center'} p={'1em'} bg={'var(--dark-shade)'} 
@@ -70,8 +70,8 @@ const CreateUser =() => {
 
                 fontSize={'0.8em'} w={'80%'} mx={'auto'}>Copy and Save your pass phrase, this is what will be used as your password  </Text>
 
-                <Box w={'100%'} p={'2em'} my={'2em'} bg={'var(--bright-shade)'}>
-                   
+                <Box w={'90%'} mx={'auto'} p={'1.5em'} my={'2em'} bg={'var(--bright-shade)'}>
+                    <Text fontWeight={'bold'} my={'0.8em'} color={'var(--primary-green)'}>Mnemonic </Text>
                     {/* display mnemonic phrase */}
                     <Text fontWeight={'bold'}>{phrase}</Text>
                
