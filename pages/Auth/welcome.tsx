@@ -1,24 +1,39 @@
 import { Avatar, Box, Text,  Center, Flex } from "@chakra-ui/react";
 import InterfaceButton from "../../Components/main/Button";
 import ContainerLayout from "../../Layouts/ContainerLayout";
+import makeBlockie from "ethereum-blockies-base64";
+import {useState , useEffect } from 'react';
 
 const Welcome =() => {
+
+    const [address , setAddress ] = useState();
+    //check if localStorage is undefined 
+       
+   useEffect(() => {
+        //check if localStorage is available.
+        if (typeof window !== "undefined") {
+
+            const data = localStorage.getItem('address');
+            // @ts-ignore
+            setAddress(data)
+        
+        }
+   }, [])
     return (
         <>
 
             <ContainerLayout>
 
-                <Text fontWeight={'bold'} fontSize={'5em'}
-                  position={'absolute'} left={'-2em'} color={"gray.900"} >Freedom</Text>
+             
                 <Flex alignItems={'center'} textAlign={'center'} justifyContent={'center'} h={"100vh"}>
                  <Box >
 
 
-                     <Avatar/>
+                     <Avatar src={ makeBlockie('address')}/>
 
                      <Text my={'0.5em'}> Welcome Back 👋 </Text>
 
-                     <Text >0x23d039ddjskaxnje0022 </Text>
+                     <Text w={'70%'} mx={'auto'}>{address} </Text>
 
                      <InterfaceButton bg={'var(--primary-green)'}>Continue</InterfaceButton>
 
