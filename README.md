@@ -1,7 +1,7 @@
 #### Private Me 
 
 Private me is a platform for anononymity, where by every users identity
-is replaced with Ethereum Address and Blockies  as a digital identity 
+is replaced with an Ethereum Address and Blockies  as a digital identity 
 
 
 * It also has an anonymous message platform 
