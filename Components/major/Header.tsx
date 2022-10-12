@@ -1,17 +1,32 @@
 
-import { Box , Flex, Text  } from "@chakra-ui/react";
+import { Box , Flex, Text , Avatar } from "@chakra-ui/react";
+import ContainerLayout from '../../Layouts/ContainerLayout';
 const Header =() => {
     return (
         <>
         
+            <ContainerLayout>
+
+
+
+
             <Box>
 
 
-                <Flex>
+                <Flex my={'1em'} alignItems={'center'} justifyContent={'space-between'}>
 
 
                     <Box>
-                        Anon
+
+                        
+                        <Text  fontFamily={'var(--font-comic)'}> Private.Me</Text>
+                        <Box py={'0.3em'} w={'1em'}  bg={'var(--primary-green)'}>
+
+                    </Box>
+                    </Box> 
+
+                    <Box>
+                        <Avatar/>
                     </Box>
 
 
@@ -19,10 +34,13 @@ const Header =() => {
                     
 
                 </Flex>
+              </Box>
+                
+            </ContainerLayout>
 
 
 
-            </Box>
+      
         
         </>
     )
