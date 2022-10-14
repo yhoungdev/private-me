@@ -6,7 +6,8 @@ const PostContainer =() => {
     return (
         <>
         
-            <Box p={'1.6em'} bg={'var(--lighten-dark)'} borderRadius={'0.5em'}>
+            <Box p={'1.6em'} bg={'var(--dark-shade)'}
+                my={'1em'} borderRadius={'0.5em'}    fontFamily={'var(--font-commic)'}>
                 
                 <Box display={'flex'} alignItems={'center'} gap={'1em'}>
 

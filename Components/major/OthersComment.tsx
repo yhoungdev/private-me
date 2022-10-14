@@ -9,7 +9,8 @@ const OthersComment =() => {
                 <Avatar/>
 
                 <Box p={'1em'} bg={'var( --bright-shade)'}
-                    borderRadius={'0.3em'}>
+                    borderRadius={'0.3em'} color={'#9B9B9B !important'}
+                    fontFamily={'var(--font-sans)'}>
 
                        Maybe consider trying a different format 
                        to package your skills like functional resumes. 

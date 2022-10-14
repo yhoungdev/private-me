@@ -1,8 +1,10 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import CreatePost from "../../Components/essentials/CreatePost";
 import Header from '../../Components/major/Header';
 import ContainerLayout from '../../Layouts/ContainerLayout';
 import PostContainer from '../../Components/essentials/PostContainer';
+import CommunityBox from '../../Components/major/CommunitiesBox';
+import CreatePostPanel from "../../Components/main/CreatePostBox";
 
 const Index =() => {
 
@@ -12,9 +14,22 @@ const Index =() => {
             
             <ContainerLayout>
 
-            
+                
 
-                <PostContainer/>
+                <Flex flexDirection={['column-reverse' , 'row']}
+                    gap={'1em'}>
+
+                   <Box w={['100%','70%']}>
+                     <CreatePostPanel/>
+                     <PostContainer/>
+                     <PostContainer/>
+                   </Box>
+
+                    <Box display={['none' , 'block']}>
+                        <CommunityBox/>
+                    </Box>
+
+                </Flex>
 
 
 
