@@ -1,8 +1,17 @@
 import {Box, Text, Avatar  } from '@chakra-ui/react';
 import PostComment from '../major/PostComment';
 import {AiOutlineComment} from 'react-icons/ai';
+import { useState } from 'react';
 
-const PostContainer =() => {
+
+interface Props {
+    item ?: string
+}
+const PostContainer =({item}: Props) => {
+    //@ts-ignore
+    const [ data , setData ] = useState();
+    
+
     return (
         <>
         
@@ -37,8 +46,10 @@ const PostContainer =() => {
                     </Box>
                 </Box>
                 {/* post container component */}
-                <Box>
-                    <PostComment/>
+                <Box display={item}>
+                    
+                        <PostComment/> : ''
+                    
                 </Box>
 
             </Box>

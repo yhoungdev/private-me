@@ -3,6 +3,7 @@ import InterfaceButton from "../../Components/main/Button";
 import ContainerLayout from "../../Layouts/ContainerLayout";
 import makeBlockie from "ethereum-blockies-base64";
 import {useState , useEffect } from 'react';
+import Link from 'next/link';
 
 const Welcome =() => {
 
@@ -35,7 +36,9 @@ const Welcome =() => {
 
                      <Text w={'70%'} mx={'auto'}>{address} </Text>
 
-                     <InterfaceButton bg={'var(--primary-green)'}>Continue</InterfaceButton>
+                     <Link href={'/main'}>
+                       <InterfaceButton bg={'var(--primary-green)'}>Continue</InterfaceButton>
+                     </Link>
 
                   </Box>
                 </Flex>

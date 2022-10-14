@@ -5,6 +5,7 @@ import ContainerLayout from '../../Layouts/ContainerLayout';
 import PostContainer from '../../Components/essentials/PostContainer';
 import CommunityBox from '../../Components/major/CommunitiesBox';
 import CreatePostPanel from "../../Components/main/CreatePostBox";
+import OthersComment from '../../Components/major/OthersComment';
 
 const Index =() => {
 
@@ -21,8 +22,8 @@ const Index =() => {
 
                    <Box w={['100%','70%']}>
                      <CreatePostPanel/>
-                     <PostContainer/>
-                     <PostContainer/>
+                     <PostContainer item={'block'}/>
+                     <PostContainer item={'none'}/>
                    </Box>
 
                     <Box display={['none' , 'block']}>
