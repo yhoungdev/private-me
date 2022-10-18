@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",
@@ -30,6 +31,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
+    "prettier": "2.7.1",
     "typescript": "4.8.3"
   }
 }
