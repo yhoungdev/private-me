@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import copy from 'copy-to-clipboard';
 import { ToastContainer, toast } from 'react-toastify';
 
+import { Post, Get } from '../../helper/Request';
+
 const CreateUser =() => {
 
     const [ address , setAddress ] = useState <any>();
@@ -47,6 +49,19 @@ const CreateUser =() => {
     }
         
 
+    const handleApi =  () => {
+
+     
+        // const response =  Post('/auth/address', 'obiabo');
+        // console.warn(response);
+           //@ts-ignore
+        const response =  Get('/communities');
+        console.log(response)
+
+
+    }
+
+    handleApi()
 
     return (
         <>
