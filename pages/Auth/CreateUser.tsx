@@ -6,9 +6,10 @@ import { useEffect, useState } from "react";
 import copy from "copy-to-clipboard";
 import { ToastContainer, toast } from "react-toastify";
 
-const CreateUser = () => {
-  const [address, setAddress] = useState<any>();
-  const [phrase, setPhrase] = useState<any>([]);
+const CreateUser =() => {
+
+    const [ address , setAddress ] = useState <any>();
+    const [ phrase , setPhrase ] = useState<any>([]);
 
   const blockchainIdentity = async () => {
     const wallet = ethers.Wallet.createRandom();
@@ -31,13 +32,17 @@ const CreateUser = () => {
     blockchainIdentity();
   }, []);
 
-  const copyToClipBoard = () => {
-    //copy mnemonic phrase
-    copy(phrase);
-    toast.success(" Copied to clipboard successfully ", {
-      theme: "colored",
-    });
-  };
+
+    const copyToClipBoard =() => {
+        //copy mnemonic phrase 
+        copy(phrase);
+        toast.success(' Copied to clipboard successfully ', {
+            theme:'colored'
+        })
+
+    }
+        
+
 
   return (
     <>
