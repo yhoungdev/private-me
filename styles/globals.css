@@ -22,3 +22,7 @@
     background-color: var(--background)!important ;
     color: var(--color) !important ;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
