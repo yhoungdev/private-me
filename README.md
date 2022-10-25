@@ -1,4 +1,7 @@
 #### Private Me 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Private me is a platform for anononymity, where by every users identity
 is replaced with an Ethereum Address and Blockies  as a digital identity 
@@ -48,3 +51,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/CA-MKSingh"><img src="https://avatars.githubusercontent.com/u/52215756?v=4?s=100" width="100px;" alt="Mukesh Singh"/><br /><sub><b>Mukesh Singh</b></sub></a><br /><a href="https://github.com/yhoungdev/Private-me-/commits?author=CA-MKSingh" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
