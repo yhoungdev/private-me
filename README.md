@@ -1,6 +1,6 @@
 #### Private Me 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Private me is a platform for anononymity, where by every users identity
@@ -63,6 +63,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/CA-MKSingh"><img src="https://avatars.githubusercontent.com/u/52215756?v=4?s=100" width="100px;" alt="Mukesh Singh"/><br /><sub><b>Mukesh Singh</b></sub></a><br /><a href="https://github.com/yhoungdev/Private-me-/commits?author=CA-MKSingh" title="Code">💻</a></td>
+      <td align="center"><a href="http://www.obiabo.me"><img src="https://avatars.githubusercontent.com/u/54102389?v=4?s=100" width="100px;" alt="Sudo Whoam i"/><br /><sub><b>Sudo Whoam i</b></sub></a><br /><a href="https://github.com/yhoungdev/Private-me-/commits?author=yhoungdev" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
