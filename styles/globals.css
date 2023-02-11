@@ -6,9 +6,10 @@
     --faded-gray: #EEF2F8;
     --primary-green: #6BD968;
     --primary-blue: #3992FF;
-    --dark-shade : #0c0c0c;
+    --dark-shade : #191919 ;
     --bright-shade: #262626;
     --lighten-dark: #303030;
+    --profile-green: #3EA579;
     /* fonts  */
     --font-satoshi: 'Satoshi', sans-serif;
     --font-sans: 'General Sans', sans-serif;
@@ -21,4 +22,5 @@
  body {
     background-color: var(--background)!important ;
     color: var(--color) !important ;
+    font-family: inter;
 }
