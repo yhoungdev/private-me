@@ -22,6 +22,7 @@ const Hero = () => {
     onOpen: onModal,
     onClose: closeModal,
   } = useDisclosure();
+
   const {
     isOpen: isDrawal,
     onOpen: onDrawal,
@@ -67,7 +68,7 @@ const Hero = () => {
               </Text>
 
               <Center>
-                <InterfaceButton bg={"var(--primary-blue)"} onClick={onModal}>
+                <InterfaceButton bg={"var(--primary-green)"} onClick={onModal}>
                   Get Started
                 </InterfaceButton>
               </Center>

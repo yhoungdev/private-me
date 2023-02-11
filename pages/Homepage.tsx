@@ -7,6 +7,7 @@ const Homepage = () => {
     <>
       <DefaultHeader />
       <Hero />
+
       <Info />
     </>
   );

@@ -1,12 +1,12 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700&f[]=general-sans@500,600,700&f[]=sentient@700&f[]=outfit@500,600,700&f[]=comico@400&f[]=clash-grotesk@700&display=swap");
 
 :root {
-    --background: #121212;
+    --background: #000;
     --color: white;
     --faded-gray: #EEF2F8;
     --primary-green: #6BD968;
     --primary-blue: #3992FF;
-    --dark-shade : #1D1D1D;
+    --dark-shade : #0c0c0c;
     --bright-shade: #262626;
     --lighten-dark: #303030;
     /* fonts  */
