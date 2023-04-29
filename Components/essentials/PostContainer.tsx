@@ -14,7 +14,7 @@ const PostContainer = ({ item }: Props) => {
     <>
       <Box
         p={"1.6em"}
-        bg={"var(--dark-shade)"}
+        bg={"var(--pm-dark-shade)"}
         my={"1em"}
         borderRadius={"1em"}
         fontFamily={"var(--font-commic)"}

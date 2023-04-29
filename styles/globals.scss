@@ -1,15 +1,16 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700&f[]=general-sans@500,600,700&f[]=sentient@700&f[]=outfit@500,600,700&f[]=comico@400&f[]=clash-grotesk@700&display=swap");
 
 :root {
-    --background: #000;
+    --background: #181818;
     --color: white;
-    --faded-gray: #EEF2F8;
-    --primary-green: #6BD968;
-    --primary-blue: #3992FF;
-    --dark-shade : #191919 ;
-    --bright-shade: #262626;
-    --lighten-dark: #303030;
-    --profile-green: #3EA579;
+    --pm-faded-gray: #EEF2F8;
+    --pm-btn-green: #6BD968;
+    --pm-blue: #3992FF;
+    --pm-dark-shade : #242424 ;
+    --pm-bright-shade: #262626;
+    --pm-lighten-dark: #303030;
+    --pm-profile-green: #3EA579;
+    --pm-button-gray: #303030
     /* fonts  */
     --font-satoshi: 'Satoshi', sans-serif;
     --font-sans: 'General Sans', sans-serif;

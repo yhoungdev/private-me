@@ -16,12 +16,12 @@ const Info = () => {
             mx={"auto"}
           >
             Privacy is{" "}
-            <span style={{ color: "var(--primary-green)" }}>Human Right</span>
+            <span style={{ color: "var(--pm-btn-green)" }}>Human Right</span>
           </Text>
         </Box>
 
         <Box
-          bg={"var(--dark-shade)"}
+          bg={"var(--pm-dark-shade)"}
           p={"2em"}
           mx={"auto"}
           my={"3em"}

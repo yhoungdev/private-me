@@ -6,7 +6,7 @@ const UserProfile = () => {
   return (
     <>
       <Box
-        bg={"var(--profile-green)"}
+        bg={"var(--pm-profile-green)"}
         position={"relative"}
         w={"100vw"}
         p={"2em"}

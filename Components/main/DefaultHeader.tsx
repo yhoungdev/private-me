@@ -13,7 +13,7 @@ const DefaultHeader = () => {
           <Flex justifyContent={"space-between"} my={"1em"} width={"full"}>
             <Box>
               <Text fontFamily={"var(--font-comic)"}> Private.Me</Text>
-              <Box py={"0.3em"} w={"1em"} bg={"var(--primary-green)"}></Box>
+              <Box py={"0.3em"} w={"1em"} bg={"var(--pm-btn-green)"}></Box>
             </Box>
 
             <Box>{/* Join Network */}</Box>

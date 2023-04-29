@@ -58,7 +58,7 @@ const Hero = () => {
                 lineHeight={["", "97px"]}
               >
                 Privacy is{" "}
-                <span style={{ color: "var(--primary-green)" }}>
+                <span style={{ color: "var(--pm-btn-green)" }}>
                   Human Right
                 </span>
               </Text>
@@ -68,7 +68,7 @@ const Hero = () => {
               </Text>
 
               <Center>
-                <InterfaceButton bg={"var(--primary-green)"} onClick={onModal}>
+                <InterfaceButton bg={"var(--pm-btn-green)"} onClick={onModal}>
                   Get Started
                 </InterfaceButton>
               </Center>
@@ -125,7 +125,7 @@ const Hero = () => {
             <Box
               textAlign={"center"}
               p={["2em", "1.5em"]}
-              bg={"var(--bright-shade)"}
+              bg={"var(--pm-bright-shade)"}
               borderRadius={"0.5em"}
               cursor={"pointer"}
               onClick={onDrawal}
@@ -137,7 +137,7 @@ const Hero = () => {
             <Box
               textAlign={"center"}
               p={["2em", "1.5em"]}
-              bg={"var(--bright-shade)"}
+              bg={"var(--pm-bright-shade)"}
               borderRadius={"0.5em"}
               cursor={"pointer"}
               onClick={onDrawalAuth}
