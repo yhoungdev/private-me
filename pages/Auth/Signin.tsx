@@ -1,5 +1,5 @@
 import { Avatar, Box, Center, Flex, Text, Textarea } from "@chakra-ui/react";
-import InterfaceButton from "../../components/main/Button";
+import ButtonInterface from "@/components/essentials/button";
 import { FiCopy } from "react-icons/fi";
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
@@ -79,15 +79,15 @@ const RestoreAccount = () => {
           />
 
           <Center>
-            <InterfaceButton
-              bg={"var(--pm-btn-green)"}
+            {/* <InterfaceButton
+              bg={'var(--pm-btn-green)'}
               onClick={restoreIndentity}
               isLoading={loader}
-              loadingText={"Restoring Wallet"}
+              loadingText={'Restoring Wallet'}
             >
-              {" "}
+              {' '}
               Continue
-            </InterfaceButton>
+            </InterfaceButton> */}
           </Center>
         </Box>
       </Flex>

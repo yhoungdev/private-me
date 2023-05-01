@@ -1,6 +1,6 @@
-import { Avatar, Box, Text, Center, Flex } from "@chakra-ui/react";
-import InterfaceButton from "../../components/main/Button";
-import ContainerLayout from "../../container/containerLayout";
+import { Avatar, Box, Text, Flex } from "@chakra-ui/react";
+import ButtonInterface from "@/components/essentials/button";
+import ContainerLayout from "@/container/containerLayout";
 import makeBlockie from "ethereum-blockies-base64";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -36,9 +36,9 @@ const Welcome = () => {
             </Text>
 
             <Link href={"/main"}>
-              <InterfaceButton bg={"var(--pm-btn-green)"}>
+              <ButtonInterface bg={"var(--pm-btn-green)"}>
                 Continue
-              </InterfaceButton>
+              </ButtonInterface>
             </Link>
           </Box>
         </Flex>
