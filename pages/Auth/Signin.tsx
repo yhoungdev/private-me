@@ -1,5 +1,5 @@
 import { Avatar, Box, Center, Flex, Text, Textarea } from "@chakra-ui/react";
-import InterfaceButton from "../../Components/main/Button";
+import InterfaceButton from "../../components/main/Button";
 import { FiCopy } from "react-icons/fi";
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";

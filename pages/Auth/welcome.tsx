@@ -1,6 +1,6 @@
 import { Avatar, Box, Text, Center, Flex } from "@chakra-ui/react";
-import InterfaceButton from "../../Components/main/Button";
-import ContainerLayout from "../../Layouts/ContainerLayout";
+import InterfaceButton from "../../components/main/Button";
+import ContainerLayout from "../../container/containerLayout";
 import makeBlockie from "ethereum-blockies-base64";
 import { useState, useEffect } from "react";
 import Link from "next/link";

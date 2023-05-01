@@ -1,9 +1,8 @@
-import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import "react-toastify/dist/ReactToastify.css";
+import { ChakraProvider, extendTheme, ColorModeScript } from "@chakra-ui/react";
+import { theme } from "../theme/theme";
+import "@/styles/main.scss";
 
-const theme = extendTheme({});
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
