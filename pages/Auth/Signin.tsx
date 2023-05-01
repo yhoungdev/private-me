@@ -1,8 +1,10 @@
 import { Avatar, Box, Center, Flex, Text, Textarea } from "@chakra-ui/react";
-import InterfaceButton from "../../Components/main/Button";
+import ButtonInterface from "@/components/essentials/button";
+import { FiCopy } from "react-icons/fi";
 import { ethers } from "ethers";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const RestoreAccount = () => {
   const [loader, setLoader] = useState(false);
@@ -52,7 +54,7 @@ const RestoreAccount = () => {
           <Text
             textAlign={"center"}
             p={"1em"}
-            bg={"var(--dark-shade)"}
+            bg={"var(--pm-dark-shade)"}
             w={"fit-content"}
             mx={"auto"}
           >
@@ -70,22 +72,22 @@ const RestoreAccount = () => {
           </Text>
 
           <Textarea
-            bg={"var(--bright-shade)"}
+            bg={"var(--pm-bright-shade)"}
             w={"100%"}
             placeholder={"Enter recovery phrase"}
             onChange={(e) => setPhrase(e.target.value)}
           />
 
           <Center>
-            <InterfaceButton
-              bg={"var(--primary-green)"}
+            {/* <InterfaceButton
+              bg={'var(--pm-btn-green)'}
               onClick={restoreIndentity}
               isLoading={loader}
-              loadingText={"Restoring Wallet"}
+              loadingText={'Restoring Wallet'}
             >
-              {" "}
+              {' '}
               Continue
-            </InterfaceButton>
+            </InterfaceButton> */}
           </Center>
         </Box>
       </Flex>

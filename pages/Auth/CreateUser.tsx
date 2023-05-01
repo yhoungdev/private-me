@@ -1,15 +1,14 @@
 import { Avatar, Box, Center, Flex, Link, Text } from "@chakra-ui/react";
-import InterfaceButton from "../../Components/main/Button";
+import InterfaceButton from "../../components/main/Button";
 import { FiCopy } from "react-icons/fi";
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import copy from "copy-to-clipboard";
 import { ToastContainer, toast } from "react-toastify";
 
-const CreateUser =() => {
-
-    const [ address , setAddress ] = useState <any>();
-    const [ phrase , setPhrase ] = useState<any>([]);
+const CreateUser = () => {
+  const [address, setAddress] = useState<any>();
+  const [phrase, setPhrase] = useState<any>([]);
 
   const blockchainIdentity = async () => {
     const wallet = ethers.Wallet.createRandom();
@@ -32,17 +31,13 @@ const CreateUser =() => {
     blockchainIdentity();
   }, []);
 
-
-    const copyToClipBoard =() => {
-        //copy mnemonic phrase 
-        copy(phrase);
-        toast.success(' Copied to clipboard successfully ', {
-            theme:'colored'
-        })
-
-    }
-        
-
+  const copyToClipBoard = () => {
+    //copy mnemonic phrase
+    copy(phrase);
+    toast.success(" Copied to clipboard successfully ", {
+      theme: "colored",
+    });
+  };
 
   return (
     <>
@@ -60,7 +55,7 @@ const CreateUser =() => {
           <Text
             textAlign={"center"}
             p={"1em"}
-            bg={"var(--dark-shade)"}
+            bg={"var(--pm-dark-shade)"}
             w={"fit-content"}
             mx={"auto"}
           >
@@ -83,12 +78,12 @@ const CreateUser =() => {
             mx={"auto"}
             p={"1.5em"}
             my={"2em"}
-            bg={"var(--bright-shade)"}
+            bg={"var(--pm-bright-shade)"}
           >
             <Text
               fontWeight={"bold"}
               my={"0.8em"}
-              color={"var(--primary-green)"}
+              color={"var(--pm-btn-green)"}
             >
               Mnemonic{" "}
             </Text>
@@ -99,7 +94,7 @@ const CreateUser =() => {
               <Text
                 p={"0.5em"}
                 borderRadius={"0.5em"}
-                bg={"var(--dark-shade)"}
+                bg={"var(--pm-dark-shade)"}
                 cursor={"pointer"}
               >
                 <FiCopy size={"1.5em"} />
@@ -109,7 +104,7 @@ const CreateUser =() => {
 
           <Center>
             <Link href={"/main"}>
-              <InterfaceButton bg={"var(--primary-green)"}>
+              <InterfaceButton bg={"var(--pm-btn-green)"}>
                 Continue
               </InterfaceButton>
             </Link>
